@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "nft_service"
+version = "0.1.0"
+description = ""
+authors = ["Natalia Eyherabide"]
+readme = "README.md"
+packages = [{include = "nft_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.89.1"
+uvicorn = "^0.20.0"
+pydantic = "^1.10.4"
+sqlmodel = "^0.0.8"
+mysqlclient = "^2.1.1"
+python-multipart = "^0.0.5"
+mypy = "^0.991"
+flake8 = "^6.0.0"
+pytest-asyncio = "^0.20.3"
+httpx = "^0.23.3"
+types-setuptools = "^65.7.0.1"
+pillow = "^9.4.0"
+loguru = "^0.6.0"
+orjson = "^3.8.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
